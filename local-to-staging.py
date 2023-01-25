@@ -17,7 +17,7 @@ def import_json():
     print("connect Successfully")
 
     # Read JSON Data
-    df = pd.read_parquet(r'D:\Dana\business.parquet')
+    df = pd.read_parquet(r'D:\Dana\business.parquet', engine='pyarrow')
     print("read Successfully")
 
     # convert nested data
